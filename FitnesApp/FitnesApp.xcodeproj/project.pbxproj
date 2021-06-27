@@ -13,6 +13,9 @@
 		806D8FE52684EEF600C4FB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806D8FE32684EEF600C4FB84 /* Main.storyboard */; };
 		806D8FE72684EEF700C4FB84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806D8FE62684EEF700C4FB84 /* Assets.xcassets */; };
 		806D8FEA2684EEF700C4FB84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806D8FE82684EEF700C4FB84 /* LaunchScreen.storyboard */; };
+		806D8FF22684F06400C4FB84 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D8FF12684F06400C4FB84 /* Exercise.swift */; };
+		806D8FF42685E57000C4FB84 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D8FF32685E57000C4FB84 /* Progress.swift */; };
+		806D8FF82686842300C4FB84 /* SetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D8FF72686842300C4FB84 /* SetGoal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		806D8FE62684EEF700C4FB84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		806D8FE92684EEF700C4FB84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		806D8FEB2684EEF700C4FB84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		806D8FF12684F06400C4FB84 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		806D8FF32685E57000C4FB84 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		806D8FF72686842300C4FB84 /* SetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,32 @@
 			children = (
 				806D8FDD2684EEF600C4FB84 /* AppDelegate.swift */,
 				806D8FDF2684EEF600C4FB84 /* SceneDelegate.swift */,
-				806D8FE12684EEF600C4FB84 /* ViewController.swift */,
+				806D8FF62685E87F00C4FB84 /* Protocol */,
+				806D8FF52685E81F00C4FB84 /* ViewControllers */,
 				806D8FE32684EEF600C4FB84 /* Main.storyboard */,
 				806D8FE62684EEF700C4FB84 /* Assets.xcassets */,
 				806D8FE82684EEF700C4FB84 /* LaunchScreen.storyboard */,
 				806D8FEB2684EEF700C4FB84 /* Info.plist */,
 			);
 			path = FitnesApp;
+			sourceTree = "<group>";
+		};
+		806D8FF52685E81F00C4FB84 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				806D8FF32685E57000C4FB84 /* Progress.swift */,
+				806D8FE12684EEF600C4FB84 /* ViewController.swift */,
+				806D8FF12684F06400C4FB84 /* Exercise.swift */,
+				806D8FF72686842300C4FB84 /* SetGoal.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		806D8FF62685E87F00C4FB84 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806D8FF22684F06400C4FB84 /* Exercise.swift in Sources */,
+				806D8FF42685E57000C4FB84 /* Progress.swift in Sources */,
 				806D8FE22684EEF600C4FB84 /* ViewController.swift in Sources */,
+				806D8FF82686842300C4FB84 /* SetGoal.swift in Sources */,
 				806D8FDE2684EEF600C4FB84 /* AppDelegate.swift in Sources */,
 				806D8FE02684EEF600C4FB84 /* SceneDelegate.swift in Sources */,
 			);
