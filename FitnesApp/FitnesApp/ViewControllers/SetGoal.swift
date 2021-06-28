@@ -35,6 +35,15 @@ class SetGoal: UIViewController{
         label.text = "Set your Dayly Goal"
     }
     
+    @IBAction func deleteUserdefaults(_ sender: Any) {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
     @IBAction func saveButton(_ sender: Any) {
         userDefaults.setValue(Int(squatGoal.text ?? "0") , forKey: "squatGoal")
         userDefaults.setValue(Int(lungesGoal.text ?? "0"), forKey: "lungesGoal")

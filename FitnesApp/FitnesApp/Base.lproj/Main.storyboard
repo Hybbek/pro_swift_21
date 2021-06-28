@@ -759,7 +759,7 @@
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOG-C7-gcY">
-                                <rect key="frame" x="190" y="746.5" width="34" height="30"/>
+                                <rect key="frame" x="252" y="746.5" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveButton:" destination="mD9-BA-pQY" eventType="touchUpInside" id="nAN-Vo-uQb"/>
@@ -794,6 +794,13 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJV-Sb-T0O">
+                                <rect key="frame" x="122.5" y="746.5" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteUserdefaults:" destination="mD9-BA-pQY" eventType="touchUpInside" id="8Mb-HK-NMg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Khh-NG-4Rx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -826,7 +833,9 @@
                             <constraint firstItem="x1h-J7-JmW" firstAttribute="centerY" secondItem="k2e-Ab-IlW" secondAttribute="centerY" id="XWj-VI-ZUm"/>
                             <constraint firstItem="Aly-ra-bVq" firstAttribute="centerY" secondItem="fOO-YL-Zom" secondAttribute="centerY" id="Xa2-ys-Swe"/>
                             <constraint firstItem="o84-8I-GbG" firstAttribute="centerX" secondItem="Msq-fe-6YW" secondAttribute="centerX" multiplier="1.2" id="Yd3-CM-ams"/>
+                            <constraint firstItem="kJV-Sb-T0O" firstAttribute="centerY" secondItem="qOG-C7-gcY" secondAttribute="centerY" id="ZI9-yW-F8f"/>
                             <constraint firstItem="3Qw-OC-ZyB" firstAttribute="centerY" secondItem="JQ7-ab-DTZ" secondAttribute="centerY" id="b1x-NT-Uf3"/>
+                            <constraint firstItem="kJV-Sb-T0O" firstAttribute="centerX" secondItem="Msq-fe-6YW" secondAttribute="centerX" multiplier="0.7" id="bct-4b-yue"/>
                             <constraint firstItem="k2e-Ab-IlW" firstAttribute="centerY" secondItem="CXH-i3-a2w" secondAttribute="centerY" id="cBC-ee-DuV"/>
                             <constraint firstItem="JQ7-ab-DTZ" firstAttribute="top" secondItem="qFK-zQ-omb" secondAttribute="bottom" constant="35" id="cbd-Pc-yPG"/>
                             <constraint firstItem="Aly-ra-bVq" firstAttribute="leading" secondItem="fOO-YL-Zom" secondAttribute="trailing" constant="100" id="d71-Or-kwf"/>
@@ -847,7 +856,7 @@
                             <constraint firstItem="wXw-jr-Jwa" firstAttribute="leading" secondItem="o84-8I-GbG" secondAttribute="trailing" constant="100" id="tr9-cb-1jk"/>
                             <constraint firstItem="72x-Me-Tpj" firstAttribute="leading" secondItem="vz4-or-uMK" secondAttribute="trailing" constant="100" id="unl-OH-JKH"/>
                             <constraint firstItem="k2e-Ab-IlW" firstAttribute="centerX" secondItem="Msq-fe-6YW" secondAttribute="centerX" multiplier="0.4" id="v0t-RW-dIV"/>
-                            <constraint firstItem="qOG-C7-gcY" firstAttribute="centerX" secondItem="Msq-fe-6YW" secondAttribute="centerX" id="w99-b7-jAt"/>
+                            <constraint firstItem="qOG-C7-gcY" firstAttribute="centerX" secondItem="Msq-fe-6YW" secondAttribute="centerX" multiplier="1.3" id="w99-b7-jAt"/>
                             <constraint firstItem="fOO-YL-Zom" firstAttribute="centerY" secondItem="qFK-zQ-omb" secondAttribute="centerY" id="wNv-Hm-j2g"/>
                             <constraint firstItem="V4L-BI-wZm" firstAttribute="centerY" secondItem="CXH-i3-a2w" secondAttribute="centerY" id="z2z-Vz-2cY"/>
                         </constraints>

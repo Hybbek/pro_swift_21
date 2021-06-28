@@ -57,20 +57,22 @@ class Progress: UIViewController{
     }
     
     func addProgressToLabel(){
-        let plankTimeInMinutes = userdefault.value(forKey: "Plank") as! Int / 60
-       
+        
+        var plank = userdefault.value(forKey: "Plank") ?? 0
+        plank = plank as! Int / 60
+        userdefault.setValue(plank, forKey: "Plank")
+        
         squatReps.text = "\(userdefault.value(forKey: "Squats") ?? "0")"
         lungesReps.text = "\(userdefault.value(forKey: "Lunges") ?? "0")"
         pushupsReps.text = "\(userdefault.value(forKey: "Pushups") ?? "0")"
         pullupsReps.text = "\(userdefault.value(forKey: "Pullups") ?? "0")"
         burpeesReps.text = "\(userdefault.value(forKey: "Burpees") ?? "0")"
         crunchReps.text = "\(userdefault.value(forKey: "Crunches") ?? "0")"
-            
-            
-        
-        plankTime.text = "\(plankTimeInMinutes) min"
+        plankTime.text = "\(userdefault.value(forKey: "Plank") ?? "0")"
         legRaiseReps.text = "\(userdefault.value(forKey: "Leg Raise") ?? "0")"
     }
+    
+    // Compares set Goal userdefaults to progress userdefaults
     
     func compareGoalToProgress(){
         text.text = "keep gioing to rach your dayly goal"
