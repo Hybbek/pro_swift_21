@@ -65,7 +65,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 50
     }
     
-    //passiert nichts?
+   
     func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
         return 20
     }
@@ -79,8 +79,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         let category = exercises[indexPath.section][indexPath.row]
         
-        
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "Exercise") as! Exercise
 
@@ -105,7 +103,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // open Progress Viecontroller (shows your progress)
     @IBAction func getProgress(_ sender: Any) {
-        //let storyboard1 = UIStoryboard(name: "Main", bundle: nil)
+
         let vcProgress = storyboard?.instantiateViewController(withIdentifier: "Progress") as! Progress
         
         vcProgress.title = "Progress"
@@ -115,7 +113,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // open SetGoal Viewcontroller (you can set your Goal there)
     @IBAction func setGoal(_ sender: Any) {
-//        let storyboard2 = UIStoryboard(name: "Main", bundle: nil)
+
         let vcGoal = storyboard?.instantiateViewController(withIdentifier: "SetGoal") as! SetGoal
 
         vcGoal.title = "Dayly Goal"
